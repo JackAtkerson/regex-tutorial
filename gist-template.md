@@ -19,7 +19,7 @@ In this article, we will be breaking down a regular expression that can be used 
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Summary](#summary)
+- [Wrap-Up](#wrap-up)
 
 ## Regex Components
 
@@ -48,7 +48,7 @@ We can see a few criteria listed inside the brackets, but what do they mean? The
 ### Greedy and Lazy Match
 When using regular expressions, you can specify whether your quantifiers will make "greedy" matches or "lazy" matches. Greedy essentially means to match the longest possible string. Lazy, on the other hand, will match the shortest string possible. Our quantifier "+" is greedy, and will therefore look for characters until it cannot find any more that fit the search criteria. Adding a "?" after a quantifier will make it lazy. If we used "+?" it will look for characters that match each of the criteria once, and then it will not look for any more to match.
 
-### Summary
+### Wrap-Up
 In short, our regular expression uses anchors to mark the start and end of our string, then uses parentheses to break the string into three groups separated by email address boilerplate elements ("@" and "."). Then the square brackets are used to create bracket expressions, which will look for numbers, lowercase letters, and the other characters specified. The bracket expressions are followed by qualifiers that will look for matches either one or more times ("+") or between 2 and 6 times ("{2, 6}"). The regex will search for a match of "<string>@<string>.<string>" the basic layout of an email address. This will allow the user to extract email addresses from a text document.
 ```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
