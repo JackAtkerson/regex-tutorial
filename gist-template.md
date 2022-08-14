@@ -60,5 +60,7 @@ When using regular expressions, you can specify whether your quantifiers will ma
 ### Look-ahead and Look-behind
 
 ## Author
+Jack Atkerson is learning coding through the Vanderbilt University Coding Bootcamp. He is based out of Nashville, Tennessee and currently works for the Frothy Monkey Roasting Company as a delivery driver and production coordinator. 
+GitHub: https://github.com/JackAtkerson
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
