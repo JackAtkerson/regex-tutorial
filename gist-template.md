@@ -30,7 +30,7 @@ In this article, we will be breaking down a regular expression that can be used 
 Anchors are used to match strings that start or begin with certain elements. The ``` ^ ``` anchor denotes what the string will start with, and the ``` $ ``` anchor denotes the end of the string. As you can see in our example regex, we have a ``` ^ ``` at the beginning, and a ``` $ ``` to denote the end.
 
 ### Quantifiers
-Quantifiers are used to specify how many instances of a character, group, or character class must be present for the input to be matched. In our example regex, the ``` + ``` quantifier is used. This quantifier matches the preceding string one or more times. In this case, the regex engine will match strings containing one or moer of the characters that match the criteria listed inside of the [bracket expressions](#bracket-expressions).
+Quantifiers are used to specify how many instances of a character, group, or character class must be present for the input to be matched. In our example regex, the ``` + ``` quantifier is used. This quantifier matches the preceding string one or more times. In this case, the regex engine will match strings containing one or more of the characters that match the criteria listed inside of the [bracket expressions](#bracket-expressions). The other quantifier used in our regex is ```{2,6}```. This will match a user specified range of characters that align with the search criteria. The first number is the minimum number of matches, and the second is the maximum. In our example, the minimum is set to 2 and the maximum is 6, so the regex engine will match 2 to 6 characters.
 
 ### OR Operator
 OR Operators are used to match strings that contain one of the elements inside. 
