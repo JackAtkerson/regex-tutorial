@@ -30,7 +30,7 @@ Anchors are used to match strings that start or begin with certain elements. The
 Quantifiers are used to specify how many instances of a character, group, or character class must be present for the input to be matched. In our example regex, the ``` + ``` quantifier is used. This quantifier matches the preceding string one or more times. In this case, the regex engine will match strings containing one or more of the characters that match the criteria listed inside of the [bracket expressions](#bracket-expressions). The other quantifier used in our regex is ```{2,6}```. This will match a user specified range of characters that align with the search criteria. The first number is the minimum number of matches, and the second is the maximum. In our example, the minimum is set to 2 and the maximum is 6, so the regex engine will match 2 to 6 characters.
 
 ### OR Operator
-OR Operators are used to match strings that contain one of the elements inside. 
+OR Operators are used to match strings that contain one of the elements inside. There are two approaches you can take when using OR operators. We can put the two options in a group separated by ```|``` or place them in square brackets. The regex engine will look for one of the characters in the operator and only return strings that contain one of them.
 
 ### Character Classes
 Character classes are used to tell the regex engine to match one of several possible characters. This is similar to listing a range of numbers or letters inside square brackets. In our example, we have the ```\d``` character class. This will find a single character in the string that is a digit. Other options are ```\w``` that will match a word, and ```\s``` which will match a whiteapce character.
