@@ -36,12 +36,7 @@ Quantifiers are used to specify how many instances of a character, group, or cha
 OR Operators are used to match strings that contain one of the elements inside. 
 
 ### Character Classes
-Character classes are used to tell the regex engine to match one of several possible characters. There are a couple of ways to use character classes. You can list all of the characters you want between square brackets. Our example has done this a few times, but we will look at this particular instance: 
-```
-[a-z0-9_\.-]
-```
-This block will look for a character between a & z, as well as a digit between 0 & 9, an
- Our example also has the ``` /d ``` character class selector. This will match one digit between 0 and 9.
+Character classes are used to tell the regex engine to match one of several possible characters. This is similar to listing a range of numbers or letters inside square brackets. In our example, we have the ```\d``` character class. This will find a single character in the string that is a digit. Other options are ```\w``` that will match a word, and ```\s``` which will match a whiteapce character.
 
 ### Flags
 
