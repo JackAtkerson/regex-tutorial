@@ -53,9 +53,10 @@ Inside of our groups are characters contained by square brackets. These are brac
 ```
 [a-z0-9_\.-]
 ```
-We can see a few criteria listed inside the brackets, but what do they mean? These are ranges of characters that will be matched by the regex engine. "a-z" will ask the engine to look for lowercase letters from a to z. Similarly, "0-9" will search for a number character between 0 and 9. On top of looking for a character within a range of characters, you can also look for specific characters. In our example, we are looking specifically for "_" or "-".
+We can see a few criteria listed inside the brackets, but what do they mean? These are ranges of characters that will be matched by the regex engine. "a-z" will ask the engine to look for lowercase letters from a to z. Similarly, "0-9" will search for a number character between 0 and 9. On top of looking for a character within a range of characters, you can also look for specific characters. In our example, we are looking specifically for "_" or "-", as we have them listed inside the bracket.
 
 ### Greedy and Lazy Match
+When using regular expressions, you can specify whether your quantifiers will make "greedy" matches or "lazy" matches. Greedy essentially means to match the longest possible string. Lazy, on the other hand, will match the shortest string possible. Our quantifier "+" is greedy, and will therefore look for characters until it cannot find any more that fit the search criteria. Adding a "?" after a quantifier will make it lazy. If we used "+?" it will look for characters that match each of the criteria once, and then it will not look for any more to match.
 
 ### Boundaries
 
